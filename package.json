@@ -1,0 +1,14 @@
+{
+  "name": "imdb_movie_shopify",
+  "version": "1.0.0",
+  "description": "IMDB Movie Searcher",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Harjap Gill",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
