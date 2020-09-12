@@ -9,7 +9,7 @@ Front-end created using HTML, CSS, Javascript, Bootstrap and EJS.
 ## Running Locally
 
 ```bash
-git clone https://github.com/sibtc/form-rendering-examples.git
+git clone https://github.com/NosBos/IMDB_Movie_Selector.git
 ```
 
 You must have npm installed to manage the packages required for this project
