@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+
+      <!-- Bootstrap Scripts -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+  integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+  crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+  integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+  crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+  integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+  crossorigin="anonymous"></script>
+
+    <title>IMDB Movie Searcher</title>
+</head>
+<body>
+    <form action="/" method="post">
+
+        <div class="view">
+            <div class = "box" id="heading">
+                <h1>IMDB Movie Viewer</h1>
+        
+            </div>
+            <div class="box">
+                <label for="cityInput">Movie Name</label>
+                <input id="movieInput" type="text" name="movieName">
+                <button type="submit">Go</button>
+            </div>
+
+            <% if (typeof mov1 !== 'undefined') { %>
+                <ul>
+                    <li class="item">
+                        <label class="lab"><%= mov1.Title %></label>
+
+                        <label class="lab"> Created in: <%= mov1.Year %></label>
+                    </li>
+                    <li class="item">
+                        <label class="lab"><%= mov2.Title %></label>
+                        <label class="lab"> Created in: <%= mov2.Year %></label>
+                    </li>
+                    <li class="item">
+                        <label class="lab"><%= mov3.Title %></label>
+                        <label class="lab"> Created in: <%= mov3.Year %></label>
+                    </li>
+                    <li class="item">
+                        <label class="lab"><%= mov4.Title %></label>
+                        <label class="lab"> Created in: <%= mov4.Year %></label>
+                    </li>
+                    <li class="item">
+                        <label class="lab"><%= mov5.Title %></label>
+                        <label class="lab"> Created in: <%= mov5.Year %></label>
+                    </li>
+
+                </ul>
+
+            <% } %>
+        </div>
+
+    </form>
+
+    
+</body>
+</html>
